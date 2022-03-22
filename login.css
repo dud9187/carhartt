@@ -1,0 +1,158 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    border: none;
+    display: block;
+}
+#wrap{
+    width: 100%;
+    height: auto;
+    }
+    header{
+        width: 100%;
+        height: 100px;
+        border-top: 2px solid #fac011;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    #gnb{
+        width: 1400px;
+        margin: 0 auto;
+    }
+    #gnb .gnb_top{
+        width: 100%;
+        height: 98px;
+        position: relative;
+    }
+    /* 로고 */
+    h1{
+        width: 194px;
+        height: 63px;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+    h1 img{
+        max-width: 100%;
+    }
+    /* 오른쪽 메뉴 */
+    .icons_box{
+        width: 150px;
+        height: 40px;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .icons{
+        width: 40px;
+        height: 40px;
+        float: right;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    .icons a{
+        display: block;
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin-right: 20px;
+        box-sizing: border-box;
+    }
+    .icons a img{
+        max-width: 100%;
+    }
+    .icons .non_ico{
+        display: none;
+    }
+    .icons:hover .vis_ico{
+        display: none;
+    }
+    .icons:hover .non_ico{
+        display: block;
+    }
+    section{
+        width: 100%;
+        height: auto;
+    }
+    .large{
+        width: 100%;
+        height: 900px;
+        background-color: #d1d1d1;
+        position: relative;
+    }
+    .midium{
+        width: 1400px;
+        height: 650px;
+        background-color: #fff;
+        position: absolute;
+        top: 150px;
+        left: 350px;
+    }
+    .login_box{
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    .login_box>h2{
+        font-size: 40px;
+        letter-spacing: 20px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .login_box>p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .login_box>input{
+        width: 300px;
+        height: 30px;
+        margin-bottom: 30px;
+    }
+    .login_box h6{
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 40px;
+    }
+    .login_box .login{
+        background-color: #d1d1d1;
+    }
+    .login_box .join{
+        background-color: #b4b4b4;
+    }
+    .login_box span{
+        margin-top: 20px;
+        float: right;
+    }
+    .login_box span:hover{
+        border-bottom: 2px solid #b4b4b4;
+    }
+    footer{
+        width: 100%;
+        height: 70px;
+        background-color: #d1d1d1;
+    }
+    footer p{
+        text-align: center;
+        padding-top: 20px;
+    }

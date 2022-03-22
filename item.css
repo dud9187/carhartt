@@ -1,0 +1,219 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    border: none;
+    display: block;
+}
+#wrap{
+    width: 100%;
+    height: auto;
+    }
+header{
+    width: 100%;
+    height: 160px;
+    border-top: 2px solid #fac011;
+    border-bottom: 1px solid #dcdcdc;
+}
+#gnb{
+    width: 1400px;
+    height: 160px;
+    margin: 0 auto;
+}
+#gnb .gnb_top{
+    width: 100%;
+    height: 98px;
+    position: relative;
+}
+#gnb .gnb_btm{
+    width: 100%;
+    height: 59px;
+}
+/* 로고 */
+h1{
+    width: 194px;
+    height: 63px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+h1 img{
+    max-width: 100%;
+}
+/* 오른쪽 메뉴 */
+.icons_box{
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.icons{
+    width: 40px;
+    height: 40px;
+    float: right;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 5px;
+}
+.icons a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+.icons a img{
+    max-width: 100%;
+}
+.icons .non_ico{
+    display: none;
+}
+.icons:hover .vis_ico{
+    display: none;
+}
+.icons:hover .non_ico{
+    display: block;
+}
+/* 메뉴 */
+nav{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+nav li{
+    clear: both;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 150px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+nav li a:hover{
+    color: #fac011;
+}
+/* 카테고리 */
+.category{
+    width: 100%;
+}
+.category>h2{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 35px;
+    color: #9f9f9f;
+    letter-spacing: 5px;
+}
+.category ul{
+    text-align: center;
+    padding: 80px 0;
+}
+.category li{
+    display: inline-block;
+    margin-right: 120px;
+}
+.category li:last-child{
+    margin-right: 0;
+}
+.category a:hover{
+    color: #fac011;
+}
+/* 빅박스 */
+.container{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.container>.box{
+    margin-bottom: 200px;
+}
+.container img{
+    margin-bottom: 20px;
+}
+.box{
+    position: relative;
+}
+.box>h5{
+    font-size: 16px;
+}
+.box>p{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 15px 0;
+    color: #8c8c8c;
+}
+.box>h6{
+    font-size: 16px;
+}
+.container>.box_last{
+    margin-bottom: 100px;
+}
+.box_out{
+    width: 327px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    display: none;
+}
+.box_hover{
+    width: 327px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    display: block;
+}
+
+.box_hover>p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 43px;
+}
+.free{
+    position: absolute;
+    top: 180px;
+}
+.container img:hover{
+    opacity: 30%;
+}
+.box img:hover .box_hover{
+    display: block;
+}
+
+/* more */
+.more{
+    width: 60px;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.more>p{
+    font-size: 25px;
+ }
+ .more>p:hover{
+    background: linear-gradient(to top, #ffe400 50%, transparent 50%);
+ }
